@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./sass/index.scss" />
+  </head>
+
+  <body class="home-page">
+    <div class="wrapper-body">
+      <header>
+        <include src="./partials/header.html"></include>
+      </header>
+      <main class="main-wrapper container">
+        <aside>
+          <div class="left-side">
+            <div class="home-categories">
+              <include src="./partials/categories.html"></include>
+            </div>
+            <div class="home-donate">
+              <include src="./partials/donate.html"></include>
+            </div>
+          </div>
+        </aside>
+        <div>
+          <include src="./partials/home.html"></include>
+        </div>
+        <include src="./partials/button_up.html"></include>
+      </main>
+    </div>
+    <div>
+      <include src="./partials/modalFav.html"></include>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
